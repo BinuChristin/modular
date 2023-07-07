@@ -1,0 +1,21 @@
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Full Name</th>
+            <th>Designation</th>
+            <th>Date of Joining</th>
+            <th>Department ID</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr *ngFor="let emp of employeeService.employees">
+                <td>{{emp.id}}</td>
+                <td>{{emp.employeeName}}</td>
+                <td>{{emp.designation}}</td>
+                <td>{{emp.dateOfJoining}}</td>
+                <td>{{emp.departmentid}}</td>
+                <td>{{emp.active}}</td>
+            </tr>
+    </tbody>
